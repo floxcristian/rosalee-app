@@ -1,0 +1,7 @@
+{
+  "name": "Rosalee Salon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
