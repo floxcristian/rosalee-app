@@ -1,15 +1,20 @@
 <ion-header translucent="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <!--  <ion-buttons slot="start">
       <ion-button (click)="selectAll(false)">Limpiar</ion-button>
+    </ion-buttons>-->
+    <ion-buttons slot="start">
+      <ion-button (click)="closeModal()">
+        <span>
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </span>
+      </ion-button>
     </ion-buttons>
 
-    <ion-title>
-      Filtros
-    </ion-title>
+    <ion-title> Filtros </ion-title>
 
     <ion-buttons slot="end">
-      <ion-button (click)="applyFilters()" strong>Listo</ion-button>
+      <ion-button (click)="applyFilters()" strong>Limpiar</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
