@@ -29,13 +29,16 @@
     <ion-item-sliding *ngFor="let product of products">
       <ion-item>
         <ion-thumbnail slot="start">
-          <img [src]="product.images[0]" />
+          <img
+            [src]="product.images[0]"
+            style="border: 1px solid #d1d3db; border-radius: 5px"
+          />
         </ion-thumbnail>
         <ion-label>
           <ion-text color="primary">
             <h3 style="font-size: 12px">{{product.brand}}</h3>
           </ion-text>
-          <!-- MARCA -->
+
           <p
             style="
               white-space: nowrap;
@@ -46,11 +49,9 @@
             {{ product.name}}
           </p>
           <!-- Precio dscto. -->
-          <ion-text color="secondary">
-            <p style="font-weight: 700; font-size: 16px">{{product.code}}</p>
+          <ion-text color="dark">
+            <p>{{product.code}}</p>
           </ion-text>
-          <i class="fas fa-truck mr-1" style="font-size: 15px"></i>
-          <i class="fas fa-store mr-1" style="font-size: 15px"></i>
         </ion-label>
         <!--
           <p-inputNumber

@@ -37,8 +37,7 @@ export const PRODUCTS: IProduct[] = [
     code: 'BFAIRYTALE',
     color: 'Morado',
     images: [
-      'https://www.seducete.cl/media/productos/bluesky-esmalte-gel-qxg184-glitter-fino-semi-holo_qxg184p.2.jpg',
-      'https://www.seducete.cl/media/galerias/bluesky-esmalte-gel-qxg184-glitter-fino-semi-holo_coleccionesblueskyweb2_pages-to-jpg-0033.jpg',
+      'https://www.seducete.cl/media/productos/bluesky-esmalte-permanente-fairy-tale-lila_1.jpg',
     ],
     description:
       'Bluesky es una marca profesional, certficada como cruelty free y vegana, conoce los más de 500 colores disponibles.',
