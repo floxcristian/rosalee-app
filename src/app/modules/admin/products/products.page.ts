@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonRouterOutlet, ModalController } from '@ionic/angular';
 import { ProductFilterComponent } from './components/product-filter/product-filter.component';
+import { PRODUCTS } from './data/products';
+import { IProduct } from './data/product.interface';
 
 @Component({
   selector: 'app-products',
@@ -8,19 +10,24 @@ import { ProductFilterComponent } from './components/product-filter/product-filt
   styleUrls: ['./products.page.scss'],
 })
 export class ProductsPage implements OnInit {
+  products: IProduct[] = PRODUCTS;
   showSearchbar!: boolean;
   segment = 'all';
   queryText = '';
-  constructor(    public modalCtrl: ModalController,  public routerOutlet: IonRouterOutlet,) { }
+  constructor(
+    public modalCtrl: ModalController,
+    public routerOutlet: IonRouterOutlet
+  ) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   async presentFilter() {
     const modal = await this.modalCtrl.create({
       component: ProductFilterComponent,
       presentingElement: this.routerOutlet.nativeEl,
-      componentProps: { /*excludedTracks: this.excludeTracks*/ }
+      componentProps: {
+        /*excludedTracks: this.excludeTracks*/
+      },
     });
     await modal.present();
 
@@ -30,6 +37,4 @@ export class ProductsPage implements OnInit {
       //this.updateSchedule();
     }
   }
-  
-
 }

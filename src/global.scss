@@ -27,7 +27,14 @@
 
 // Checkbox en cuadrito.
 ion-radio {
-    --border-radius: 4px;
-    --inner-border-radius: 2px;
-  }
-  
+  --border-radius: 4px;
+  --inner-border-radius: 2px;
+}
+
+ion-button {
+  text-transform: unset;
+}
+
+ion-button.md {
+  text-transform: unset;
+}

@@ -158,15 +158,15 @@
       },
       {
         "file": "src/app/modules/admin/customers/customers-routing.module.ts",
-        "hash": "3125217707456588935"
+        "hash": "3472101696402124906"
       },
       {
         "file": "src/app/modules/admin/customers/customers.module.ts",
-        "hash": "12190204777257601653"
+        "hash": "15754132727380920003"
       },
       {
         "file": "src/app/modules/admin/customers/customers.page.html",
-        "hash": "13801580051536694658"
+        "hash": "16105410017058289070"
       },
       {
         "file": "src/app/modules/admin/customers/customers.page.scss",
@@ -174,19 +174,19 @@
       },
       {
         "file": "src/app/modules/admin/customers/customers.page.spec.ts",
-        "hash": "18429996881584634985"
+        "hash": "12151169124237030821"
       },
       {
         "file": "src/app/modules/admin/customers/customers.page.ts",
-        "hash": "14746396671609904116"
+        "hash": "3450746412152484412"
       },
       {
         "file": "src/app/modules/admin/products/components/product-filter/product-filter.component.html",
-        "hash": "8459050386231007331"
+        "hash": "6902954370093533908"
       },
       {
         "file": "src/app/modules/admin/products/components/product-filter/product-filter.component.scss",
-        "hash": "3244421341483603138"
+        "hash": "6477837376733012452"
       },
       {
         "file": "src/app/modules/admin/products/components/product-filter/product-filter.component.spec.ts",
@@ -194,7 +194,7 @@
       },
       {
         "file": "src/app/modules/admin/products/components/product-filter/product-filter.component.ts",
-        "hash": "261497105042406303"
+        "hash": "18264193656879031395"
       },
       {
         "file": "src/app/modules/admin/products/products-routing.module.ts",
@@ -222,15 +222,15 @@
       },
       {
         "file": "src/app/modules/admin/schedule/schedule-routing.module.ts",
-        "hash": "159211337291198527"
+        "hash": "8232109895728486759"
       },
       {
         "file": "src/app/modules/admin/schedule/schedule.module.ts",
-        "hash": "9672579059352538251"
+        "hash": "17218549739344712202"
       },
       {
         "file": "src/app/modules/admin/schedule/schedule.page.html",
-        "hash": "13765184596063972496"
+        "hash": "16418114328787944247"
       },
       {
         "file": "src/app/modules/admin/schedule/schedule.page.scss",
@@ -238,11 +238,11 @@
       },
       {
         "file": "src/app/modules/admin/schedule/schedule.page.spec.ts",
-        "hash": "12330814527134747240"
+        "hash": "17232928361188214910"
       },
       {
         "file": "src/app/modules/admin/schedule/schedule.page.ts",
-        "hash": "2380591490872299384"
+        "hash": "515692523959729392"
       },
       {
         "file": "src/assets/icon/favicon.png",
@@ -262,7 +262,7 @@
       },
       {
         "file": "src/global.scss",
-        "hash": "1918626602965251672"
+        "hash": "9839099943869725877"
       },
       {
         "file": "src/index.html",
