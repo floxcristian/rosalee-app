@@ -36,7 +36,7 @@
         </ion-thumbnail>
         <ion-label>
           <ion-text color="primary">
-            <h3 style="font-size: 12px">{{product.brand}}</h3>
+            <h3 style="font-size: 12px; font-weight: 600">{{product.brand}}</h3>
           </ion-text>
 
           <p
@@ -49,9 +49,13 @@
             {{ product.name}}
           </p>
           <!-- Precio dscto. -->
-          <ion-text color="dark">
-            <p>{{product.code}}</p>
-          </ion-text>
+          <!-- <ion-text color="dark"> -->
+          <div style="display: flex; gap: 0.2rem">
+            <ion-badge>{{product.code }}</ion-badge>
+            <ion-badge color="success">{{product.size }}</ion-badge>
+          </div>
+          <!-- <p>{{product.code}}</p> -->
+          <!-- </ion-text> -->
         </ion-label>
         <!--
           <p-inputNumber
