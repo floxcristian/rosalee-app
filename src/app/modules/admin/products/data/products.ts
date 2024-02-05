@@ -46,4 +46,18 @@ export const PRODUCTS: IProduct[] = [
     brand: 'Bluesky',
     size: '15ml',
   },
+  {
+    name: 'Esmalte gel Amarillo con mini glitter turquesa',
+    code: 'ZZ63914',
+    color: 'Amarillo',
+    images: [
+      'https://www.seducete.cl/media/productos/bluesky-esmalte-gel-63914-amarillo-con-mini-glitter-turquesa_amari.png',
+    ],
+    description:
+      'Bluesky es una marca profesional, certficada como cruelty free y vegana, conoce los más de 500 colores disponibles.',
+    instructions:
+      'TIPS: (1) Aplica base, color y top en capas delgadas o de lo contrario el esmalte se puede recoger o saltar. (2) Cada vez que apliques una capa, sella el borde libre de la uña cubriéndolo con esmalte, para así evitar que se salte el color. (3) No debes tocar el borde de la cutícula con el esmalte o puede ocurrir levantamiento de éste al pasar los días y por ende, se puede salir. (4) Paso fundamental es el uso de un deshidratador para evitar la oleosidad de la uña. (5) Por último, cuando utilices colores oscuros, debes curarlos tiempo extra, ya que éstos tienden a ser un poco más espesos.',
+    brand: 'Bluesky',
+    size: '15ml',
+  },
 ];

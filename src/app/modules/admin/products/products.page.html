@@ -29,10 +29,7 @@
     <ion-item-sliding *ngFor="let product of products">
       <ion-item>
         <ion-thumbnail slot="start">
-          <img
-            [src]="product.images[0]"
-            style="border: 1px solid #d1d3db; border-radius: 5px"
-          />
+          <img [src]="product.images[0]" style="border: 1px solid #d1d3db" />
         </ion-thumbnail>
         <ion-label>
           <ion-text color="primary">
@@ -48,14 +45,11 @@
           >
             {{ product.name}}
           </p>
-          <!-- Precio dscto. -->
-          <!-- <ion-text color="dark"> -->
+
           <div style="display: flex; gap: 0.2rem">
             <ion-badge>{{product.code }}</ion-badge>
             <ion-badge color="success">{{product.size }}</ion-badge>
           </div>
-          <!-- <p>{{product.code}}</p> -->
-          <!-- </ion-text> -->
         </ion-label>
         <!--
           <p-inputNumber
@@ -76,7 +70,10 @@
         -->
       </ion-item>
       <ion-item-options>
-        <ion-item-option color="danger">
+        <ion-item-option
+          color="danger"
+          (click)="openDeleteProductAlert(product)"
+        >
           <div
             style="
               display: flex;
@@ -91,10 +88,6 @@
             <div class="ion-text-capitalize">Eliminar</div>
           </div>
         </ion-item-option>
-        <!--
-        <ion-item-option color="danger">
-          <ion-icon slot="icon-only" name="trash"></ion-icon>
-        </ion-item-option> -->
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
