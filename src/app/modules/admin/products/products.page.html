@@ -5,26 +5,58 @@
     </ion-buttons>
     <ion-title *ngIf="!showSearchbar">Inventario</ion-title>
     <ion-searchbar
+      mode="md"
+      color="light"
+      class="custom"
       *ngIf="showSearchbar"
       showCancelButton="always"
       [(ngModel)]="queryText"
       (ionCancel)="showSearchbar = false"
-      placeholder="¿Qué estás buscando?"
+      placeholder="Buscar en inventario"
     ></ion-searchbar>
-    <ion-buttons slot="end">
-      <ion-button *ngIf="!showSearchbar" (click)="showSearchbar = true">
+    <!-- Start::botones cuando no esta el searchbar -->
+    <ion-buttons slot="end" *ngIf="!showSearchbar">
+      <ion-button (click)="showSearchbar = true">
         <ion-icon slot="icon-only" name="search"></ion-icon>
       </ion-button>
-      <ion-button *ngIf="!showSearchbar" (click)="presentFilter()">
+      <ion-button (click)="presentFilter()">
         <span>
           <ion-icon slot="icon-only" name="options"></ion-icon>
         </span>
+      </ion-button>
+    </ion-buttons>
+    <!-- End::botones cuando no esta el searchbar -->
+
+    <ion-buttons *ngIf="showSearchbar" slot="end">
+      <ion-button (click)="scanBarcode()">
+        <ion-icon slot="icon-only" name="barcode-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-toolbar color="light" class="filter-header">
+    <div
+      class="filtros d-flex align-items-center justify-content-between ion-padding-start ion-padding-end"
+    >
+      <!-- Resultados -->
+      <div class="ion-padding-end">22 Resultados</div>
+
+      <!-- Ordenar -->
+      <div
+        class="ordenar ion-padding-start ion-padding-end"
+        id="verMenuOrdenar"
+      >
+        <ion-icon name="swap-vertical-outline"></ion-icon>Ordenar
+      </div>
+      <!-- Filtrar -->
+      <div class="filtrar ion-padding-start" id="verMenuFiltrar">
+        <ion-icon name="funnel-outline"></ion-icon> Filtrar
+      </div>
+    </div>
+  </ion-toolbar>
+  <!-- Start::listado de productos -->
   <ion-list class="ion-margin-bottom ion-no-padding" lines="full">
     <ion-item-sliding *ngFor="let product of products">
       <ion-item>
@@ -32,19 +64,11 @@
           <img [src]="product.images[0]" style="border: 1px solid #d1d3db" />
         </ion-thumbnail>
         <ion-label>
-          <ion-text color="primary">
+          <ion-text color="primary" class="ion-text-uppercase">
             <h3 style="font-size: 12px; font-weight: 600">{{product.brand}}</h3>
           </ion-text>
 
-          <p
-            style="
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            "
-          >
-            {{ product.name}}
-          </p>
+          <p class="two-lines">{{ product.name}}</p>
 
           <div style="display: flex; gap: 0.2rem">
             <ion-badge>{{product.code }}</ion-badge>
@@ -91,4 +115,5 @@
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
+  <!-- End::listado de productos -->
 </ion-content>

@@ -22,7 +22,8 @@ export class ProductsPage implements OnInit {
     public modalCtrl: ModalController,
     public routerOutlet: IonRouterOutlet,
     private readonly alertCtrl: AlertController
-  ) {}
+  ) //private readonly barcodeScanner: BarcodeScanner,
+  {}
 
   ngOnInit() {}
 
@@ -83,4 +84,6 @@ export class ProductsPage implements OnInit {
     });
     await alert.present();
   }
+
+  scanBarcode() {}
 }
