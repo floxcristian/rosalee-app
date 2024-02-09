@@ -36,26 +36,29 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-toolbar color="light" class="filter-header">
+  
+  <div class="filter-header">
+  <!-- <ion-toolbar color="light" class="filter-header"> -->
     <div
       class="filtros d-flex align-items-center justify-content-between ion-padding-start ion-padding-end"
     >
-      <!-- Resultados -->
+   
       <div class="ion-padding-end">22 Resultados</div>
 
-      <!-- Ordenar -->
+    
       <div
         class="ordenar ion-padding-start ion-padding-end"
         id="verMenuOrdenar"
       >
         <ion-icon name="swap-vertical-outline"></ion-icon>Ordenar
       </div>
-      <!-- Filtrar -->
+   
       <div class="filtrar ion-padding-start" id="verMenuFiltrar">
         <ion-icon name="funnel-outline"></ion-icon> Filtrar
       </div>
     </div>
-  </ion-toolbar>
+  <!-- </ion-toolbar>  -->
+</div>
   <!-- Start::listado de productos -->
   <ion-list class="ion-margin-bottom ion-no-padding" lines="full">
     <ion-item-sliding *ngFor="let product of products">
@@ -73,6 +76,7 @@
           <div style="display: flex; gap: 0.2rem">
             <ion-badge>{{product.code }}</ion-badge>
             <ion-badge color="success">{{product.size }}</ion-badge>
+            <ion-badge color="dark">{{product.stock }} {{product.unit}}</ion-badge>
           </div>
         </ion-label>
         <!--

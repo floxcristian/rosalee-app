@@ -7,4 +7,6 @@ export interface IProduct {
   instructions: string;
   brand: string;
   size: string;
+  stock: number;
+  unit: string;
 }

@@ -7,8 +7,9 @@ ion-searchbar.custom {
   --border-radius: 8px;
 }
 
-ion-toolbar.filter-header {
+.filter-header {
   --min-height: 40px;
+  background-color: var(--ion-color-light);
 
   div {
     height: 40px;

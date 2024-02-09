@@ -16,6 +16,8 @@ export const PRODUCTS: IProduct[] = [
       'TIPS: (1) Aplica base, color y top en capas delgadas o de lo contrario el esmalte se puede recoger o saltar. (2) Cada vez que apliques una capa, sella el borde libre de la uña cubriéndolo con esmalte, para así evitar que se salte el color. (3) No debes tocar el borde de la cutícula con el esmalte o puede ocurrir levantamiento de éste al pasar los días y por ende, se puede salir. (4) Paso fundamental es el uso de un deshidratador para evitar la oleosidad de la uña. (5) Por último, cuando utilices colores oscuros, debes curarlos tiempo extra, ya que éstos tienden a ser un poco más espesos.',
     brand: 'Bluesky',
     size: '15ml',
+    stock: 2,
+    unit: 'Un'
   },
   {
     name: 'Esmalte Gel Glitter fino semi holo',
@@ -31,6 +33,8 @@ export const PRODUCTS: IProduct[] = [
       'TIPS: (1) Aplica base, color y top en capas delgadas o de lo contrario el esmalte se puede recoger o saltar. (2) Cada vez que apliques una capa, sella el borde libre de la uña cubriéndolo con esmalte, para así evitar que se salte el color. (3) No debes tocar el borde de la cutícula con el esmalte o puede ocurrir levantamiento de éste al pasar los días y por ende, se puede salir. (4) Paso fundamental es el uso de un deshidratador para evitar la oleosidad de la uña. (5) Por último, cuando utilices colores oscuros, debes curarlos tiempo extra, ya que éstos tienden a ser un poco más espesos.',
     brand: 'Bluesky',
     size: '15ml',
+    stock: 12,
+    unit: 'Un'
   },
   {
     name: 'Esmalte Gel Fairy Tale - Lila',
@@ -45,6 +49,8 @@ export const PRODUCTS: IProduct[] = [
       'TIPS: (1) Aplica base, color y top en capas delgadas o de lo contrario el esmalte se puede recoger o saltar. (2) Cada vez que apliques una capa, sella el borde libre de la uña cubriéndolo con esmalte, para así evitar que se salte el color. (3) No debes tocar el borde de la cutícula con el esmalte o puede ocurrir levantamiento de éste al pasar los días y por ende, se puede salir. (4) Paso fundamental es el uso de un deshidratador para evitar la oleosidad de la uña. (5) Por último, cuando utilices colores oscuros, debes curarlos tiempo extra, ya que éstos tienden a ser un poco más espesos.',
     brand: 'Bluesky',
     size: '15ml',
+    stock: 10,
+    unit: 'Un'
   },
   {
     name: 'Esmalte gel Amarillo con mini glitter turquesa',
@@ -59,5 +65,7 @@ export const PRODUCTS: IProduct[] = [
       'TIPS: (1) Aplica base, color y top en capas delgadas o de lo contrario el esmalte se puede recoger o saltar. (2) Cada vez que apliques una capa, sella el borde libre de la uña cubriéndolo con esmalte, para así evitar que se salte el color. (3) No debes tocar el borde de la cutícula con el esmalte o puede ocurrir levantamiento de éste al pasar los días y por ende, se puede salir. (4) Paso fundamental es el uso de un deshidratador para evitar la oleosidad de la uña. (5) Por último, cuando utilices colores oscuros, debes curarlos tiempo extra, ya que éstos tienden a ser un poco más espesos.',
     brand: 'Bluesky',
     size: '15ml',
+    stock: 7,
+    unit: 'Un'
   },
 ];
